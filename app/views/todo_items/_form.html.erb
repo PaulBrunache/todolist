@@ -1,0 +1,10 @@
+<%= form_for([@todo_list, @todo_list.todo_items.build]) do |form| %>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_field :content, placeholder: "New todo"%>
+  </div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
